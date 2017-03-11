@@ -30,6 +30,25 @@ ignores it.
 </p>
 {% endhighlight %}
 
+<div class="displayed_code_example">
+<p>
+This paragraph
+contains a lot of lines
+in the source code,
+but the browser
+ignores it.
+</p>
+
+<p>
+This paragraph
+contains         a lot of spaces
+in the source         code,
+but the        browser
+ignores it.
+</p>
+</div>
+
+
 
 ![Example of extra spaces in a paragraph element being removed](../imgs/extraSpaceParagraphs.png)
 
@@ -58,6 +77,25 @@ If you want to force a line break inside a paragraph, you can use the break tag.
 </html>
 {% endhighlight %}
 
+<div class="displayed_code_example">
+<p>
+This paragraph
+contains a lot of lines
+in the source code,
+but the browser
+ignores it.
+</p>
+
+<p>
+<br />
+<br />
+This paragraph<br />contains a single line<br />
+in the source code,<br />but the browser<br />
+adds line breaks where it is<br /><br /><br />told to.
+</p>
+</div>
+
+
 ![Paragraph Line Break Example](../imgs/paragraphLineBreaks.png)
 
 ## Horizontal Rules
@@ -70,6 +108,14 @@ Please note that line breaks `<br />` and horizontal rules `<hr />` are known as
 <hr />
 <p>Jupiter is bigger than all the other planets combined.</p>
 ```
+
+<div class="displayed_code_example">
+<p>Venus is the only planet that rotates clockwise.</p>
+<hr />
+<p>Jupiter is bigger than all the other planets combined.</p>
+</div>
+
+
 ![Horizontal Rule Example](../imgs/hrEx.png)
 
 ## Pre-Formatted Text Element
@@ -127,10 +173,57 @@ Look at how the four different approaches vary when rendered in Safari.
         </pre>
     </body>
 </html>
-
 {% endhighlight %}
 
-![Example how text is rendered differently](../imgs/renderDiff.png)
+
+<div class="displayed_code_example">
+<h2>Single Paragraph</h2>
+<p>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the       sea.
+
+  My Bonnie lies over the ocean.
+
+
+  Oh,   bring back my Bonnie to me.
+</p>
+
+<h2>Multiple Paragraphs</h2>
+<p>My Bonnie lies over the ocean.</p>
+<p>My Bonnie lies over the      sea.</p>
+<p>My Bonnie lies over the ocean.</p>
+<p>Oh,  bring back my Bonnie to me.</p>
+
+<h2>Paragraph with breaks</h2>
+<p>
+    My Bonnie lies over the ocean.<br>
+
+    My Bonnie lies over the         sea.<br>
+
+    My Bonnie lies over the ocean.<br>
+
+    Oh,     bring back my Bonnie to me.<br>
+</p>
+
+<h2>Preformatted Text Element</h2>
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the       sea.
+
+  My Bonnie lies over the ocean.
+
+
+  Oh,   bring back my Bonnie to me.
+</pre>
+</div>
+
+
+
+
+
+![Example how text is rendered differently](../imgs/renderDiff.png "Example using <pre> to force spaces.")
 
 
 ### { TODO: }

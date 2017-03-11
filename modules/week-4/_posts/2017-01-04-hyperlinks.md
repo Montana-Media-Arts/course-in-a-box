@@ -18,8 +18,18 @@ In order to link to another document, the author must include a hyper-reference 
 So a basic link might look like:
 
 ```html
-<p>This is how you would link to <a href="https://google.com">Google's Homepage</a><p>
+<p>This is how you would link to <a href="https://google.com">Google's Homepage</a></p>
 ```
+
+<div class="displayed_code_example">
+<p>This is how you would link to
+	<a href="https://google.com">Googles Homepage</a>
+</p>
+</div>
+
+
+
+
 ![Example of a link to Google.com](../imgs/basicLink.png)
 
 ### A Word About Style
@@ -43,6 +53,19 @@ Remember that the first part of the URL, or the "domain name" is the base path. 
 </ul>
 </p>
 ```
+<div class="displayed_code_example">
+<p>
+<h1>News Sites</h1>
+<ul>
+    <li><a href="http://www.huffingtonpost.com">HuffPo</a></li>
+    <li><a href="https://www.nytimes.com">The New York Times</a></li>
+    <li><a href="http://www.foxnews.com">Fox News</a></li>
+    <li><a href="http://www.theonion.com">The Onion</a></li>
+</ul>
+</p>
+</div>
+
+
 ![External Links Example](../imgs/externalLinks.png)
 
 ### Opening Links in a New Window
@@ -54,6 +77,12 @@ In this case, the attributes value should be set to "_blank". _
     <a href="https://www.google.com" target="_blank">Google Search</a> (opens in new window)
 </p>
 ```
+<div class="displayed_code_example">
+<p>
+    <a href="https://www.google.com" target="_blank">Google Search</a> (opens in new window)
+</p>
+</div>
+
 
 ## Linking to Other Pages on the Same Site
 When linking to other pages within the same site, you do not need to specify the domain name in the URL. You can use a shorthand known as **Relative URL**.

@@ -32,7 +32,7 @@ Using escape character codes in HTML text is straight forward. Simply replace th
 For example, we could write the word "CAT", by wrapping the individual letter's decimal values (67, 65, and 84) in the escape code values as;
 
 ```html
-<p>Where is the &#67;&#65;&#84; ?</p>
+<h1>Where is the &#67;&#65;&#84; ?</h1>
 ```
 
 <div class="displayed_code_example">

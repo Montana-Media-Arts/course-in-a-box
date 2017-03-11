@@ -16,6 +16,12 @@ The use of a **strong** ( `<strong>...</strong>` ) element indicates that its co
 <p><strong>Beware:</strong> Pickpockets operate in this area.</p>
 <p>This toy has many small pieces and is <strong>not suitable for children under five years old.</strong></p>
 ```
+<div class="displayed_code_example">
+<p><strong>Beware:</strong> Pickpockets operate in this area.</p>
+<p>This toy has many small pieces and is <strong>not suitable for children under five years old.</strong></p>    
+</div>
+
+
 ![Strong Markup Example](../imgs/strongEx.png)
 
 ## Italic & Emphasis
@@ -28,6 +34,13 @@ As with bold/strong, italicized text does not necessarily imply semantically dif
 <p>I think <em>Ivy</em> was the first.</p>
 <p>I think Ivy was the <em>first</em>.</p>
 ```
+<div class="displayed_code_example">
+<p>I <em>think</em> Ivy was the first.</p>
+<p>I think <em>Ivy</em> was the first.</p>
+<p>I think Ivy was the <em>first</em>.</p>
+</div>
+
+
 ![Example of the use of the emphasis element](../imgs/emphasisEx.png)
 
 ## Superscript & Subscript
@@ -41,6 +54,11 @@ The subscript element is commonly used with footnotes or in mathematical and che
 <p>On the 4<sup>th</sup> of September you will learn about E=MC<sup>2</sup>.</p>
 <p>The amount of CO<sub>2</sub> in the atmosphere grew by 2ppm in 2009<sub>1</sub>.</p>
 ```
+<div class="displayed_code_example">
+<p>On the 4<sup>th</sup> of September you will learn about E=MC<sup>2</sup>.</p>
+<p>The amount of CO<sub>2</sub> in the atmosphere grew by 2ppm in 2009<sub>1</sub>.</p>
+</div>
+
 ![Example o Superscript and Subscript elements](../imgs/sub_sup_ex.png)
 
 # { TODO: }
