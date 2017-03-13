@@ -36,7 +36,7 @@ pre {
     display: block;
     padding: (($line-height-computed - 1) * 1.5);
     padding-left: (($line-height-computed - 1) * 6);
-    padding-top: (($line-height-computed - 1) * 1);
+    padding-top: (($line-height-computed - 1) * 1.5);
     margin: 0 0 ($line-height-computed / 2) 0;
     font-size: ($font-size-base - 1); // 14px to 13px
     line-height: $line-height-base;

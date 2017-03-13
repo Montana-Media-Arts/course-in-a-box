@@ -5,7 +5,7 @@ module: 7
 
 # Where to Style
 
-There are two ways to specify CSS style rules, within a CSS Style element in an HTML document, or in a separate css document.
+There are three general ways to specify CSS style rules, within a CSS Style element in an HTML document, in a separate css document, or as an attribute within each element.
 
 # The Style Element
 
@@ -72,3 +72,27 @@ To link to an external style sheet located in the directory structure discussed 
 ```html
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 ```
+
+
+# The style attribute
+
+The last way of specifying style is to include the rule as the value for a style attribute in any HTML element.
+
+As with the global `class` and `id` attributes, every HTML element can be passed a global `style` attribute. This value takes a string, formatted as valid CSS. (NOTE: Valid CSS will be discussed over the next few pages.)
+
+```html
+<div class="content-para" style="background-color:#59ff00;color:#fff">
+    <p style="border:'solid 3px #ff0063'">Duis nulla id dolor cupidatat
+        dolor consectetur id aute eu non eu voluptate culpa minim qui esse.</p>
+    <p style="color:#00d9ff">Duis nulla id dolor cupidatat dolor consectetur
+         id aute eu non eu voluptate culpa minim qui esse.</p>
+</div>
+```
+<div class="displayed_code_example">
+<div class="content-para" style="background-color:#59ff00;color:#fff">
+    <p style="border:3px solid #ff0063;">Duis nulla id dolor cupidatat
+    dolor consectetur id aute eu non eu voluptate culpa minim qui esse.</p>
+    <p style="color:#00d9ff">Duis nulla id dolor cupidatat dolor consectetur
+     id aute eu non eu voluptate culpa minim qui esse.</p>
+</div>
+</div>
