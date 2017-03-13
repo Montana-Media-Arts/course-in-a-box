@@ -190,6 +190,3 @@ ID names are prepended with a number sign (`#`).
 <div class="car" id="para-2">No, I like trucks</div>
 <div class="car" id="para-3">I like driving aimlessly</div>
 </div>
-
-
-## Child Elements
