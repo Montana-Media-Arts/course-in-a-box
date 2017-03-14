@@ -135,16 +135,61 @@ Use the plus sign (`+`) to create an adjacent sibling selector chain. This tells
 
 <div class="displayed_code_example">
 <style>
-    h1+p {
+    .h1+p {
         border: 1px solid purple;
     }
 </style>
 
 <p>Some text</p>
-<h1>A Heading 1</h1>
+<h1 class="h1">A Heading 1</h1>
 <p>The selected element</p>
 <p>Just a paragraph</p>
 <p>not selected</p>
-<h1>Another Heading 1</h1>
+<h1 class="h1">Another Heading 1</h1>
 <p>Another selected element</p>
+</div>
+
+
+## General Sibling Selector
+
+Use the tilda (`~`) sign to create a "general sibling" relationship between elements. This selects any elements that are siblings (i.e. at the same indention level) as the first element.
+
+```html
+<style>
+    input~p {
+        border: 2px dashed purple;
+        background-color: yellow;
+    }
+</style>
+
+<p>Some Text</p>
+<p>Some Text</p>
+<p>Some Text</p>
+<input type="text" name="text1">
+<p>Some Text</p>
+<p>Some Text</p>
+<p>Some Text</p>
+<p>Some Text</p>
+<input type="text" name="text2">
+<p>Some Text</p>
+```
+
+<div class="displayed_code_example">
+<style>
+    input~p {
+        border: 2px dashed purple;
+        background-color: yellow;
+    }
+</style>
+
+<p>Some Text</p>
+<p>Some Text</p>
+<p>Some Text</p>
+<input type="text" name="text1">
+<p>Some Text</p>
+<p>Some Text</p>
+<p>Some Text</p>
+<p>Some Text</p>
+<input type="text" name="text2">
+<p>Some Text</p>
 </div>
