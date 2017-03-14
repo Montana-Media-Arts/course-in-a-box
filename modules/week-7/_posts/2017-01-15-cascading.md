@@ -185,7 +185,7 @@ NOTE: Be careful using the `!important` keyword, as it can cause you to forget w
 
 
 
+
 ## { TODO: }
 
 [- Read info on Cascading from the Mozilla Developer Network.](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
-[- Read info on Inheritance and Cascading from w3.org](https://www.w3.org/wiki/Inheritance_and_cascade)
