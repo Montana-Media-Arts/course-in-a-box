@@ -3,8 +3,6 @@ title: Conclusions
 module: 7
 ---
 
-## NOTE: More content to come. Check back by Wednesday morning for all additions. 
-
 
 
 # Conclusions
