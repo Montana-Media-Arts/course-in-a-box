@@ -34,8 +34,15 @@ Hexadecimal (or hex) values, are written as a single string, prepended with a nu
 
 If we were translate this to binary;
 
-| Binary \| | \| Hex |
-| :------ | ------: |
+<style>
+table {
+    width: 50%;
+    margin: auto;
+}
+</style>
+
+| Binary | Hex |
+| :------: | :------: |
 | 0 | 0 |
 | 1 | 1 |
 | 2 | 2 |
@@ -69,7 +76,9 @@ So, in hex, we write the value;
 - `250` as `fa`
 - `255` as `ff`
 
-**{ TODO : }** For more information on hexadecimal numbering, read;
+##### { TODO: }
+
+For more information on hexadecimal numbering, read;
 
 - [Hex Number System](http://homepage.smc.edu/morgan_david/cs40/hex-system.htm)
 - [Math is Fun: Hexadecimal Numbers](https://www.mathsisfun.com/hexadecimals.html)

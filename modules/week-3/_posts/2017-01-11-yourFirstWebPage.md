@@ -25,6 +25,8 @@ If the file itself did not open it, click it from the side bar of the atom windo
 ### i. doctype declaration
 Add the HTML5 doctype declaration on line 1. (Remember this must go in line 1. Nothing should be placed above the doctype declaration.)
 
+<div id="code-heading">HTML</div>
+
 {% highlight html linenos %}
 <!DOCTYPE html>
 {% endhighlight %}
@@ -32,6 +34,7 @@ Add the HTML5 doctype declaration on line 1. (Remember this must go in line 1. N
 ### ii.  Fill in the Basic Structure
 Add the basic structure elements (`<html>`, `<head>`, & `<body>`), starting in line 2. Also include the `utf-8` charset declaration and `title` elements in the head.
 
+<div id="code-heading">HTML</div>
 
 {% highlight html linenos %}
 <!DOCTYPE html>
@@ -50,6 +53,7 @@ Add the basic structure elements (`<html>`, `<head>`, & `<body>`), starting in l
 ### iii. Add a Page Title
 Now you can start adding information to your page. First, you should add a title for the page. For the time being, let's make that “My First Web Page” by typing that between the title element tags on line 5.
 
+<div id="code-heading">HTML</div>
 
 {% highlight html linenos %}
 <!DOCTYPE html>
@@ -68,6 +72,7 @@ Now you can start adding information to your page. First, you should add a title
 ### iv. Add Some Content!
 Finally, add a `h1` element and two `p` elements. Populate these elements with your name, and the statement “Hello World!”, respectively.
 
+<div id="code-heading">HTML</div>
 
 {% highlight html linenos %}
 <!DOCTYPE html>
@@ -98,6 +103,7 @@ You should now see your file open in a web browser, looking something like this.
 ### vi. Make Some Changes
 Back in your index.html document, add a new line before 10. There you should add a new paragraph element that includes the following text;
 
+<div id="code-heading">HTML</div>
 ``` html
 <p>This is my <em>first</em> web page!!!</p>
 ```
@@ -105,6 +111,7 @@ Back in your index.html document, add a new line before 10. There you should add
 
 Your code should look like the following;
 
+<div id="code-heading">HTML</div>
 
 {% highlight html linenos %}
 <!DOCTYPE html>

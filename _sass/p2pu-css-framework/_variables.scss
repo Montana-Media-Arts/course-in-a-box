@@ -14,7 +14,16 @@ $gray-light:            #D3D8E6;
 $gray-lighter:          #F3F4F8;
 $gray-snow:             #FCFCFC;
 
-$brand-primary:         #2b2e3c;
+$brand-primary:         #574c29;
+// $brand-dark:            #2E3236;
+$brand-dark:            #272822;
+$brand-light:           #C0B283;
+$brand-compliment-1:    #A9A9A9;
+$brand-compliment-2:    #e9d28a;
+
+$code-background: $brand-dark;
+
+
 $brand-success:         #B7D500;
 $brand-info:            #05C6B4;
 $brand-warning:         #FFBC1A;
@@ -36,46 +45,58 @@ $white:                 #FFFFFF;
 //** Background color for `<body>`.
 $body-bg:               #fff;
 //** Global text color on `<body>`.
-$text-color:            $brand-primary;
+$text-color:            #000;
 
 //** Global textual link color.
-$link-color:            #556283;
+$link-color:            $brand-primary;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      $link-color;
+$link-hover-color:      $brand-compliment-2;
+
+//** Navigation Base Color
+$nav-text:              $gray-lighter;
+// $nav-text:              $brand-compliment-2;
 
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
+@import url('https://fonts.googleapis.com/css?family=Raleway:200|Fira+Mono');
 
 $font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif;
-//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+
 $font-family-base:        $font-family-sans-serif;
 
-$font-size-base:          15px;
+//** By default, this inherits from the `<body>`.
+//** Heading Font
+// $headings-font-family:    Helvetica, Arial, sans-serif;
+$headings-font-family:    'Raleway';
+$headings-font-weight:     200;
+$headings-line-height:    1.1;
+$headings-color:          inherit;
+
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   'Fira Mono', Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$font-size-base:          18px;
 $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
+$font-size-ex-small:      ceil(($font-size-base * 0.75)); // ~12px
 
-$font-size-h1:            floor(($font-size-base * 2.6)); // ~36px
-$font-size-h2:            floor(($font-size-base * 2.15)); // ~30px
-$font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
-$font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
-$font-size-h5:            $font-size-base;
-$font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
+$font-size-h1:            floor(($font-size-base * 3.5)); // ~36px
+$font-size-h2:            floor(($font-size-base * 2.8)); // ~30px
+$font-size-h3:            ceil(($font-size-base * 2.5)); // ~24px
+$font-size-h4:            ceil(($font-size-base * 2)); // ~18px
+$font-size-h5:            ceil(($font-size-base * 1.5));
+$font-size-h6:            ceil(($font-size-base * 1)); // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.428571429; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 $line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
 
-//** By default, this inherits from the `<body>`.
-//** Heading Font
-$headings-font-family:    Helvetica, Arial, sans-serif;
-$headings-font-weight:    400;
-$headings-line-height:    1.1;
-$headings-color:          inherit;
+
 
 
 //== Iconography
@@ -823,7 +844,7 @@ $code-bg:                     #f9f2f4;
 $kbd-color:                   #fff;
 $kbd-bg:                      #333;
 
-$pre-bg:                      #272822;
+$pre-bg:                      $code-background;
 $pre-color:                   #fff;
 $pre-border-color:            #ccc;
 $pre-scrollable-max-height:   340px;

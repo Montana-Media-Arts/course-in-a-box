@@ -38,7 +38,7 @@ h1 {
 
 /* Rule 2. Applied to all paragraphs */
 p {
- /* Style declarations */
+    /* Style declarations */
 }
 ```
 

@@ -66,43 +66,47 @@ body {
 
 When setting the background color of inner elements, you should do choose colors that encourage readability, and complement the main color schemes of the site.
 
+<div id="code-heading">CSS</div>
+
+```css
+body {
+    background-color: #dddfd4;
+}
+
+header {
+    background-color: #3fb0ac;
+    padding: 75px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+main {
+    background-color: #173e43;
+    flex: 1 3 auto;
+    padding: 200px;
+}
+
+aside {
+    background-color: #fae596;
+    flex: 1 1 auto;
+    padding: 10px;
+}
+
+footer {
+    background-color: #3fb0ac;
+    padding: 75px;
+}
+```
+
+<div id="code-ruler"></div>
+
+<div id="code-heading">HTML</div>
+
 ```html
-<style>
-
-    body {
-        background-color: #dddfd4;
-    }
-
-    header {
-        background-color: #3fb0ac;
-        padding: 75px;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-
-    main {
-        background-color: #173e43;
-        flex: 1 3 auto;
-        padding: 200px;
-    }
-
-    aside {
-        background-color: #fae596;
-        flex: 1 1 auto;
-        padding: 10px;
-    }
-
-    footer {
-        background-color: #3fb0ac;
-        padding: 75px;
-    }
-
-</style>
-
 <body>
     <header></header>
     <div class="content">
@@ -117,5 +121,7 @@ When setting the background color of inner elements, you should do choose colors
 
 
 <div class="displayed_code_example">
-    <div class="embed-responsive" style="padding-bottom:75%"><iframe class="embed-responsive-item" src="https://montana-media-arts.github.io/341-work/HW-Examples/week-07/18-background-color-01/" frameborder="0" allowfullscreen></iframe></div>
+    <div class="embed-responsive" style="padding-bottom:560px"><iframe class="embed-responsive-item" src="https://montana-media-arts.github.io/341-work/lectureCode/07/background-color/" frameborder="0" allowfullscreen></iframe></div>
 </div>
+
+| [**[Code Download]**](https://github.com/Montana-Media-Arts/341-work/raw/master/lectureCode/07/background-color/background-color.zip) | [**[View on GitHub]**](https://github.com/Montana-Media-Arts/341-work/raw/master/lectureCode/07/background-color/) | [**[Live Example]**](https://montana-media-arts.github.io/341-work/lectureCode/07/background-color/) |

@@ -8,7 +8,9 @@ One of the primary reasons for the Internet was to be able to easily reference r
 In computing, a hyperlink, or simply a link, is a reference to data that the reader can directly follow either by clicking, tapping, or hovering. A hyperlink points to a whole document or to a specific element within a document. Hypertext is text with hyperlinks. The text that is linked is called anchor text. A software system that is used for viewing and creating hypertext is a hypertext system, and to create a hyperlink is to hyperlink (or simply to link). A user following hyperlinks is said to navigate or browse the hypertext. [<sup>\[1]</sup>](https://en.wikipedia.org/wiki/Hyperlink "Wikipedia - Hyperlink")
 
 ## { TODO: }
-Please read the [W3-Consortium’s document specifying the use of Links](https://www.w3.org/TR/html401/struct/links.html "W3-Consortium - Links").
+Please read;
+
+- [the W3-Consortium’s document specifying the use of Links](https://www.w3.org/TR/html401/struct/links.html "W3-Consortium - Links").
 
 ## Using Links
 With links being such a basic and historical part of the Internet, they  also have a very simple tag; `<a>...</a>`. Any text between a hyperlink element’s tags will be display as “hypertext”. Traditionally, this has been blue, underlined text, visually signifying to the user that the text is a link.
@@ -23,14 +25,14 @@ So a basic link might look like:
 
 <div class="displayed_code_example">
 <p>This is how you would link to
-	<a href="https://google.com">Googles Homepage</a>
+	<a href="https://google.com">Google's Homepage</a>
 </p>
 </div>
 
 
 
 
-![Example of a link to Google.com](../imgs/basicLink.png)
+<!-- ![Example of a link to Google.com](../imgs/basicLink.png) -->
 
 ### A Word About Style
 Link text should be specific about where the user will be going if they click a link. This means that links should not be simple text such as [click me!](#). Instead, good style would dictate that the link text be a description of the site, name, or information that informs the user.
@@ -43,7 +45,6 @@ As a reminder, **_URL_** stands for “Uniform Resource Locater.” This is cros
 Remember that the first part of the URL, or the "domain name" is the base path. Any additional pages are specified after the generic domain ".com, .edu, .org, etc". Just as in the sites you created last week.
 
 ```html
-<p>
 <h1>News Sites</h1>
 <ul>
     <li><a href="http://www.huffingtonpost.com">HuffPo</a></li>
@@ -51,10 +52,8 @@ Remember that the first part of the URL, or the "domain name" is the base path. 
     <li><a href="http://www.foxnews.com">Fox News</a></li>
     <li><a href="http://www.theonion.com">The Onion</a></li>
 </ul>
-</p>
 ```
 <div class="displayed_code_example">
-<p>
 <h1>News Sites</h1>
 <ul>
     <li><a href="http://www.huffingtonpost.com">HuffPo</a></li>
@@ -62,11 +61,10 @@ Remember that the first part of the URL, or the "domain name" is the base path. 
     <li><a href="http://www.foxnews.com">Fox News</a></li>
     <li><a href="http://www.theonion.com">The Onion</a></li>
 </ul>
-</p>
 </div>
 
 
-![External Links Example](../imgs/externalLinks.png)
+<!-- ![External Links Example](../imgs/externalLinks.png) -->
 
 ### Opening Links in a New Window
 The 'target' attribute provides us a way of specifying to a browser that a link should be opened in a new window.
@@ -91,21 +89,23 @@ This is the relative file path to additional pages in the top level directory or
 
 For example, if your directory structure looked like the following:
 
+<div id="code-heading">Directory</div>
+
 ```bash
 .
+├── index.html
+├── contact.html
 ├── about
 │   └── index.html
-├── contact.html
-├── css
-│   └── style.css
 ├── der
 │   └── blah
 │       ├── audio.html
 │       └── movies.html
-├── imgs
-│   ├── test1.jpg
-│   └── test2.jpg
-└── index.html
+├── css
+│   └── style.css
+└── imgs
+    ├── test1.jpg
+    └── test2.jpg
 ```
 ![Fake Directory Structure Image](../imgs/fakeDirectory.png)
 
@@ -125,9 +125,11 @@ Then you might have a navigation bar with the following code:
 - _Movies_ will link to the `movies.html` file two sub-directories down.
 - _Contact_ links to the `contact.html` document in the top-level of the directory.
 
-Please visit [https://montana-media-arts.github.io/341-work/lectureCode/week4/03\_linkSameSite/](https://montana-media-arts.github.io/341-work/lectureCode/week4/03_linkSameSite/) for a live example.
+Please visit the following for zip'd code, code on GitHub, & a live example;
 
-You can see the code in the 341-work repo under lectureExamples. [https://github.com/Montana-Media-Arts/341-work/tree/master/lectureCode/week4/03\_linkSameSite](https://github.com/Montana-Media-Arts/341-work/tree/master/lectureCode/week4/03_linkSameSite)
+| [**[Live Example]**](https://montana-media-arts.github.io/341-work/lectureCode/04/link-same-site/) | [**[View on GitHub]**](https://github.com/Montana-Media-Arts/341-work/raw/master/lectureCode/04/link-same-site/) | [**[Code Download]**](https://github.com/Montana-Media-Arts/341-work/raw/master/lectureCode/04/link-same-site/link-same-site.zip) |
+
+
 
 NOTE: Relative URL's help with building a site locally before pushing it to the web. This way you can develop on your local machine, and still have links to pages be valid.
 
@@ -163,6 +165,6 @@ To link to an HTML element with an assigned id, simply use the id in the hyper-r
 <h2 id="conclusions">Conclusions</h2>
 ```
 
-For a live example, visit: [https://montana-media-arts.github.io/341-work/lectureCode/week4/03\_linkInPage/linking-to-a-specific-part.html](https://montana-media-arts.github.io/341-work/lectureCode/week4/03_linkInPage/linking-to-a-specific-part.html). Notice how the links take you between sections of the page?
+Please visit the following for code on GitHub, & a live example;
 
-The code for this example is in the class repo; [https://github.com/Montana-Media-Arts/341-work/blob/master/lectureCode/week4/03\_linkInPage/linking-to-a-specific-part.html](https://github.com/Montana-Media-Arts/341-work/blob/master/lectureCode/week4/03_linkInPage/linking-to-a-specific-part.html)
+| [**[Live Example]**](https://montana-media-arts.github.io/341-work/lectureCode/04/link-in-page/) | [**[View on GitHub]**](https://github.com/Montana-Media-Arts/341-work/master/lectureCode/04/link-in-page/index.html) |

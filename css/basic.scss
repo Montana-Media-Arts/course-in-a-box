@@ -3,9 +3,9 @@
 
 
 .displayed_code_example {
-    
+
     font-family: serif;
-    font-size: 12pt;
+    font-size: 16pt;
 
     /*
      * The default style sheet used to render HTML in Chrome.
@@ -74,6 +74,8 @@
 
     p {
         display: block;
+        margin: 0;
+        line-height: 1em;
         -webkit-margin-before: 1__qem;
         -webkit-margin-after: 1__qem;
         -webkit-margin-start: 0;
@@ -164,7 +166,9 @@
     h1 {
         font-family: serif;
         display: block;
-        // font-size: 2em;
+        font-size: 2em;
+        margin: .67em 0;
+        line-height: 1em;
         -webkit-margin-before: 0.67__qem;
         -webkit-margin-after: 0.67em;
         -webkit-margin-start: 0;
@@ -205,7 +209,9 @@
     h2 {
         font-family: serif;
         display: block;
-        // font-size: 1.5em;
+        font-size: 1.5em;
+        margin: 0.75em 0;
+        line-height: 1em;
         -webkit-margin-before: 0.83__qem;
         -webkit-margin-after: 0.83em;
         -webkit-margin-start: 0;
@@ -216,7 +222,9 @@
     h3 {
         font-family: serif;
         display: block;
-        // font-size: 1.17em;
+        font-size: 1.17em;
+        margin: .83em 0;
+        line-height: 1em;
         -webkit-margin-before: 1__qem;
         -webkit-margin-after: 1em;
         -webkit-margin-start: 0;
@@ -227,6 +235,9 @@
     h4 {
         font-family: serif;
         display: block;
+        font-size: 1em;
+        margin: 1.12em 0;
+        line-height: 1em;
         -webkit-margin-before: 1.33__qem;
         -webkit-margin-after: 1.33em;
         -webkit-margin-start: 0;
@@ -237,7 +248,9 @@
     h5 {
         font-family: serif;
         display: block;
-        // font-size: .83em;
+        margin: 1.5em 0;
+        line-height: 1em;
+        font-size: .89em;
         -webkit-margin-before: 1.67__qem;
         -webkit-margin-after: 1.67em;
         -webkit-margin-start: 0;
@@ -248,7 +261,9 @@
     h6 {
         font-family: serif;
         display: block;
-        // font-size: .67em;
+        margin: 1.67em 0;
+        line-height: 1em;
+        font-size: .67em;
         -webkit-margin-before: 2.33__qem;
         -webkit-margin-after: 2.33em;
         -webkit-margin-start: 0;
@@ -342,6 +357,9 @@
     li {
         display: list-item;
         text-align: -webkit-match-parent;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1em;
     }
 
     ul ul, ol ul {

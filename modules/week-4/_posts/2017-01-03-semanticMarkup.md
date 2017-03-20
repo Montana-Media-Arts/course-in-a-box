@@ -18,7 +18,7 @@ The use of a **strong** ( `<strong>...</strong>` ) element indicates that its co
 ```
 <div class="displayed_code_example">
 <p><strong>Beware:</strong> Pickpockets operate in this area.</p>
-<p>This toy has many small pieces and is <strong>not suitable for children under five years old.</strong></p>    
+<p>This toy has many small pieces and is <strong>not suitable for children under five years old.</strong></p>
 </div>
 
 
@@ -35,13 +35,20 @@ As with bold/strong, italicized text does not necessarily imply semantically dif
 <p>I think Ivy was the <em>first</em>.</p>
 ```
 <div class="displayed_code_example">
+<style>
+    .displayCodeExample p {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1em;
+    }
+</style>
 <p>I <em>think</em> Ivy was the first.</p>
 <p>I think <em>Ivy</em> was the first.</p>
 <p>I think Ivy was the <em>first</em>.</p>
 </div>
 
 
-![Example of the use of the emphasis element](../imgs/emphasisEx.png)
+<!-- ![Example of the use of the emphasis element](../imgs/emphasisEx.png) -->
 
 ## Superscript & Subscript
 The superscript ( `<sup>...</sup>` ) & subscript ( `<sub>...</sub>` ) elements are used to raise or lower text relative to normal text.

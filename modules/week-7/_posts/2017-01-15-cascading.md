@@ -16,19 +16,25 @@ The first cascading rule can be referred to as Order or The Last Rule. Essential
 
 In the following example, the second rule overwrites the aspects duplicated in the first. (i.e. the border specification applies from the first rule, but the color and background-color specs are overwritten.)
 
-```html
-<style>
-    .class-one {
-        color: grey;
-        background-color: grey;
-        border: 3px dashed yellow;
-    }
+<div id="code-heading">CSS</div>
 
-    .class-one{
-        color: pink;
-        background-color: black;
-    }
-</style>
+```css
+.class-one {
+    color: grey;
+    background-color: grey;
+    border: 3px dashed yellow;
+}
+
+.class-one{
+    color: pink;
+    background-color: black;
+}
+```
+
+<div id="code-ruler"></div>
+<div id="code-heading">HTML</div>
+
+```html
 <div class="class-one">
     Div element of class type: "class-one".
 </div>
@@ -72,34 +78,39 @@ For example;
 - `.box-two` is more specific than `<div>`.
 - `#first-paragraph-id` is more specific than `.box-two`
 
+<div id="code-heading">CSS</div>
+
+```css
+.box-one p {
+    padding: 20%;
+    font-weight: bolder;
+    color: blue;
+}
+
+p {
+    color: pink;
+}
+
+.box-two {
+    background-color: orange;
+}
+
+#first-paragraph-id {
+    background-color: pink;
+    color: white;
+}
+
+div {
+    padding: 5%;
+    background-color: grey;
+    color: black;
+}
+```
+
+<div id="code-ruler"></div>
+<div id="code-heading">HTML</div>
+
 ```html
-<style>
-    .box-one p {
-        padding: 20%;
-        font-weight: bolder;
-        color: blue;
-    }
-
-    p {
-        color: pink;
-    }
-
-    .box-two {
-        background-color: orange;
-    }
-
-    #first-paragraph-id {
-        background-color: pink;
-        color: white;
-    }
-
-    div {
-        padding: 5%;
-        background-color: grey;
-        color: black;
-    }
-</style>
-
 <div class="container-box">
     <div class="box-one">
         <p>I like dogs.</p>
@@ -157,18 +168,24 @@ If a developer believes it is necessary to force a rule, and is worried about it
 
 NOTE: Be careful using the `!important` keyword, as it can cause you to forget why a rule is not working when otherwise it should be. Often times, it is the use of important in another rule.
 
-```html
-<style>
-    p {
-        color: blue !important;
-    }
-    .para-one {
-        color: yellow;
-    }
-</style>
+<div id="code-heading">CSS</div>
 
+```css
+p {
+    color: blue !important;
+}
+.para-one {
+    color: yellow;
+}
+```
+
+<div id="code-ruler"></div>
+<div id="code-heading">HTML</div>
+
+```html
 <p class="para-one">Hank Williams!</p>
 ```
+
 <div class="displayed_code_example">
 <style>
     .p {

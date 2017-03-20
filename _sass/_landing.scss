@@ -40,9 +40,21 @@ section {
 
 }
 
-.jumbotron header h1 {
-	font-family: $font-family-sans-serif;
-	font-size: 4em;
+.jumbotron header {
+
+
+	h1 {
+		font-family: $headings-font-family;
+		// font-family: "Open Sans";
+		font-size: 4em;
+		font-weight: $headings-font-weight;
+	}
+
+	h2 {
+		font-family: $headings-font-family;
+		// font-family: "Open Sans";
+		font-size: 3em;
+	}
 }
 
 .jumbotron_image {
@@ -52,6 +64,19 @@ section {
 	border-style: none;
 	padding: 0;
 }
+
+@media (max-width: $screen-sm - 1) {
+	.jumbotron header h1 {
+		font-size: 2em;
+	}
+	.jumbotron header h2 {
+		font-size: 1.5em;
+	}
+	.jumbotron_image {
+		width: 60%;
+	}
+}
+
 
 .calendar{
 	background-color: $white;

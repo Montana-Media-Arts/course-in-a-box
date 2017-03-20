@@ -14,7 +14,7 @@ th {
 
 // Baseline styles
 
-.table {
+table, .table {
   width: 100%;
   margin-bottom: $line-height-computed;
   // Cells
@@ -26,6 +26,7 @@ th {
       > td {
         padding: $table-cell-padding;
         line-height: $line-height-base;
+        text-align: center;
         vertical-align: top;
         border-top: 1px solid $table-border-color;
       }

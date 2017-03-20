@@ -27,7 +27,7 @@
 .post-container {
     max-height: 15em;
     overflow: hidden;
-    background-color: #333644;
+    background-color: $brand-dark;
     padding: 1em;
 
     h3 {
@@ -60,7 +60,7 @@ img {
 .sidebar {
 	order: 1;
 	min-width: $screen-md * 0.25;
-	background-color: $brand-primary;
+	
 }
 
 .main-section {

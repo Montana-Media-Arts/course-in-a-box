@@ -1,5 +1,5 @@
 body {
-	background-color: $brand-primary;
+	background-color: $brand-dark;
 }
 
 .relative {
@@ -22,7 +22,10 @@ body {
 .sidebar {
 	// position: absolute;
 	z-index: 10;
+	font-family: $font-family-sans-serif;
 	padding: 60px 0;
+	background-color: $brand-dark;
+	font-size: $font-size-ex-small;
 }
 
 .sidebar ul {
@@ -35,6 +38,10 @@ body {
 	padding-left: 60px;
 	position: relative;
 	@include transition(color, 0.3s, linear);
+
+	a {
+		color: $nav-text;
+	}
 }
 
 .sidebar li:hover {
@@ -42,18 +49,17 @@ body {
 
 	a:hover, a:focus {
 		text-decoration: none;
-		color: $white;
+		color: $link-hover-color;
 	}
 }
 
 .sidebar li.active {
-	color: $white;
-	// color: lighten($link-color, 40%);
-	background-color: lighten($link-color, 30%);
+	color: $brand-light;
+	background-color: $brand-primary;
 }
 
 .sidebar li.active a:hover {
-	color: $link-color;
+	color: $link-hover-color;
 }
 
 .sidebar li:before {
@@ -115,6 +121,7 @@ body {
 
 
 .pagination-section {
+
 	margin: 1em 0;
 }
 
@@ -126,6 +133,7 @@ body {
 .pagination-section {
 	.next, .prev {
 		text-transform: uppercase;
+		color: $link-hover-color;
 	}
 }
 

@@ -14,51 +14,54 @@ Within each declaration block, there are multiple style rules, each effecting a 
 Notice, in the displayed HTML example below the code, how the borders make it easier to visually identify the individual elements.
 
 
+<div id="code-heading">CSS</div>
+
+
+
+{% highlight CSS linenos %}
+/* Select the main container 'div' element */
+.main-container {
+    /* Draw a blue border 2px thick. */
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    /* Color the background grey */
+    background: grey;
+}
+/* Select all h1 elements */
+h1 {
+    /* Draw an orange border 2px thick around the element. */
+    border-style: solid;
+    border-color: orange;
+    /*Set a unique background color*/
+    background: #f0ebeb;
+}
+/* Select all paragraph elements */
+p {
+    border-style: solid;
+    border-color: yellow;
+    background: #ffe4e4;
+}
+/* Select the strong elements */
+strong {
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+}
+/* Select the emphasized elements */
+em {
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+}
+
+{% endhighlight %}
+
+<div id="code-ruler"></div>
+
+<div id="code-heading">HTML</div>
 
 {% highlight html linenos %}
-<!-- ///////////// CSS Rules //////////////////// -->
-<style>
-    /* Select the main container 'div' element */
-    .main-container {
-        /* Draw a blue border 2px thick. */
-        border-style: solid;
-        border-width: 2px;
-        border-color: blue;
-        /* Color the background grey */
-        background: grey;
-    }
-    /* Select all h1 elements */
-    h1 {
-        /* Draw an orange border 2px thick around the element. */
-        border-style: solid;
-        border-color: orange;
-        /*Set a unique background color*/
-        background: #f0ebeb;
-    }
-    /* Select all paragraph elements */
-    p {
-        border-style: solid;
-        border-color: yellow;
-        background: #ffe4e4;
-    }
-    /* Select the strong elements */
-    strong {
-        border-style: solid;
-        border-width: 1px;
-        border-color: red;
-    }
-    /* Select the emphasized elements */
-    em {
-        border-style: solid;
-        border-width: 1px;
-        border-color: red;
-    }
-</style>
-
-
-
-<!-- ///////////// HTML Contents //////////////////// -->
-
 <!-- Div Container -->
 <div class="main-container">
     <!-- Heading 1 -->

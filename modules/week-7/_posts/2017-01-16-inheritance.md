@@ -11,18 +11,25 @@ Inheritance allows rules for certain aspects that are defined in parent elements
 
 For example, defining the text color and font family in the all selector (`* {}`) or HTML element selector (`html {}`), will define a base text color and font for the entire page (or until another more specific rule overwrites it).
 
-```html
-<style>
-    html {
-        font-family: sans-serif;
-        color: pink;
-    }
-    #other-paragraph {
-        font-family: serif;
-        color: black;
-    }
-</style>
+<div id="code-heading">CSS</div>
 
+
+```css
+html {
+    font-family: sans-serif;
+    color: pink;
+}
+#other-paragraph {
+    font-family: serif;
+    color: black;
+}
+```
+
+<div id="code-ruler"></div>
+<div id="code-heading">HTML</div>
+
+
+```html
 <div class="container-box">
     <h1>A Heading, that is pink and without serifs.</h1>
     <p>
@@ -83,17 +90,22 @@ Text properties tend to inherit values from their parents, however, some propert
 
 If you are worried, or find a property that is not inheriting, you can for inheritance with the `inherit` keyword as the properties value.
 
-```html
-<style>
-    .parent-container {
-        color: pink;
-        background-color: black;
-    }
-    .child-container {
-        background-color: inherit;
-    }
-</style>
+<div id="code-heading">CSS</div>
 
+```css
+.parent-container {
+    color: pink;
+    background-color: black;
+}
+.child-container {
+    background-color: inherit;
+}
+```
+
+<div id="code-ruler"></div>
+<div id="code-heading">HTML</div>
+
+```html
 <div class="parent-container">
     <div class="child-container">
         <p>Notice that the black background color
@@ -130,4 +142,4 @@ If you are worried, or find a property that is not inheriting, you can for inher
 
 [- Read info on Inheritance and Cascading from w3.org](https://www.w3.org/wiki/Inheritance_and_cascade)
 
-ALSO: Read Chapter 10 from the Duckett "Introducing CSS", which will re-cover everything discussed so far. 
+ALSO: Read Chapter 10 from the Duckett "Introducing CSS", which will re-cover everything discussed so far.
