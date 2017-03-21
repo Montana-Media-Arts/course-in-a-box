@@ -1,11 +1,15 @@
 
 .displayed_code_example {
     padding: 30px;
-    margin: 0 ($padding-large-horizontal * -3) ($line-height-computed / 2) ($padding-large-horizontal * -3);
-    margin-top: -13px;
+    margin: ($line-height-computed * 1) ($padding-large-horizontal * -3) ($line-height-computed / 2) ($padding-large-horizontal * -3);
     border: ($padding-large-horizontal * 3) solid #f92672;
     // border:2px solid #f92672;
     background-color: #fff;
+}
+
+.highlighter-rouge+.displayed_code_example,
+.highlight+.displayed_code_example {
+    margin-top: -13px;
 }
 
 

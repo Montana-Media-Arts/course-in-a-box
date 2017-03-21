@@ -123,15 +123,15 @@ NOTE: This css is applying the `monoton` font to the heading and `Source Code Pr
 
 # Font Weights and Styles
 
-Notice in the example above, that in the code, the inline syntax element 'strong' has been placed around the word "interesting". Depending on the browser you are using, this word may or may not have appereard in bold, like we asked it to.
+Notice in the example above, that in the code, the inline syntax element "<strong>...</strong>" has been placed around the word "interesting". Depending on the browser you are using, this word may or may not have appereard in bold, like we asked it to.
 
-We have only imported one type of the 'Source Code Pro' family; the 'light' type. When we ask the browser to display the text as "strong"/"bold", it tries to look for a the font package, with the name 'Source Code Pro', that has been identified as the 'bold' version. Since none has been supplied, the browser must decide if it will try and make the font bold itself, or just display the text as is.
+This relates to the discussion of font weight and font stye had in the last few pages. We have only imported one type of the 'Source Code Pro' family; the 'light' type. When we ask the browser to display the text as "strong"/"bold", it tries to look for the specific font package, with the name 'Source Code Pro', that has been identified as the 'bold' version. Since none has been specified as such, the browser decides if it will try and make the font bold itself, or just display the text as is.
 
 This little example shows that if you intend to make more than one version of a font available, such as bold, or true italic, you will have to also include these font packages and tell the browser as much.
 
 When importing a font with `@font-face`, there are two additional properties that can be set, `font-weight: ` and `font-style: `. Setting these during font import makes them available to the browser.
 
-To use the font, then simply specify the weight and/or style in the css element rule, matching what you specified during font import.
+To use the font, then simply specify the weight and/or style in the css element rule, (as discussed in the last few pages) matching what you specified during font import.
 
 
 ##### Example
@@ -139,14 +139,14 @@ To use the font, then simply specify the weight and/or style in the css element 
 In the following example, six types of the font-family 'Playfair' are imported. There are three weights of this font;
 
 - regular
-- bold
-- 900 (Also known as 'Black' or 'extra-bold')
+- **bold**
+- **900 (Also known as 'Black' or 'extra-bold')**
 
-Each weight has a 'regular' and 'italic' version.
+Each weight has a 'regular' and _'italic'_ version.
 
 When selecting the font for use, the CSS specifies the `font-weight:` and `font-style:` which then allows the browser to call the correct font package.
 
-For this example, the font import statements have also been moved into their own css file; `fonts.css`. These allows the main css style file to be cleaner in appearance. Notice that the `fonts.css` file is linked in the html file before the `style.css` file.
+For this example, the font import statements have also been moved into their own css file; `fonts.css`. These allows the main css style file to be cleaner in appearance. Notice that the `fonts.css` file is linked in the html file before the `style.css` file. This is important in allowing the latter file to 'see' the fonts. 
 
 <div id="code-heading">Directory</div>
 
