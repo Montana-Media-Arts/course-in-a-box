@@ -112,7 +112,7 @@ td.code > pre {
         margin: 0 0 ($line-height-computed / 2) 0;
         white-space: pre;
         overflow: auto;
-        // border:2px solid #f92672;
+        // border:2px solid $brand-accent;
     }
     td.code > pre {
         // padding-top: 2.2em;
@@ -130,9 +130,9 @@ td.code > pre {
     margin-right: ($padding-large-horizontal * -3);
     margin-top: $line-height-computed * -0.5;
     margin-bottom: -12px;
-    border: 4px solid #f92672;
-    border-left: ($padding-large-horizontal * 3) solid #f92672;
-    border-right: ($padding-large-horizontal * 3) solid #f92672;
+    border: 4px solid $brand-accent;
+    border-left: ($padding-large-horizontal * 3) solid $brand-accent;
+    border-right: ($padding-large-horizontal * 3) solid $brand-accent;
     // height: 7px;
 }
 

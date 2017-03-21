@@ -14,14 +14,18 @@ $gray-light:            #D3D8E6;
 $gray-lighter:          #F3F4F8;
 $gray-snow:             #FCFCFC;
 
-$brand-primary:         #574c29;
+// $brand-primary:         #574c29;
+$brand-primary:         #f92672;
 // $brand-dark:            #2E3236;
-$brand-dark:            #272822;
+// $brand-dark:            #272822;
+$brand-dark:            #373e42;
 $brand-light:           #C0B283;
-$brand-compliment-1:    #A9A9A9;
+$brand-compliment-1:    #2d85af;
 $brand-compliment-2:    #e9d28a;
+$brand-accent:          #f92672;
 
 $code-background: $brand-dark;
+// $code-background: #272822;
 
 
 $brand-success:         #B7D500;
@@ -48,9 +52,11 @@ $body-bg:               #fff;
 $text-color:            #000;
 
 //** Global textual link color.
-$link-color:            $brand-primary;
+$link-color:            $brand-light;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      $brand-compliment-2;
+
+$link-color-content: $brand-accent;
 
 //** Navigation Base Color
 $nav-text:              $gray-lighter;
@@ -79,7 +85,10 @@ $headings-color:          inherit;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   'Fira Mono', Menlo, Monaco, Consolas, "Courier New", monospace;
 
+
 $font-size-base:          18px;
+
+
 $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
 $font-size-ex-small:      ceil(($font-size-base * 0.75)); // ~12px

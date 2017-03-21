@@ -2,8 +2,8 @@
 .displayed_code_example {
     padding: 30px;
     margin: ($line-height-computed * 1) ($padding-large-horizontal * -3) ($line-height-computed / 2) ($padding-large-horizontal * -3);
-    border: ($padding-large-horizontal * 3) solid #f92672;
-    // border:2px solid #f92672;
+    border: ($padding-large-horizontal * 3) solid $brand-accent;
+    // border:2px solid $brand-accent;
     background-color: #fff;
 }
 
@@ -15,7 +15,7 @@
 
 @media (max-width: $screen-md - 1) {
     .displayed_code_example {
-        border:2px solid #f92672;
+        border:2px solid $brand-accent;
         // padding-top: 0;
         // padding-bottom: (($line-height-computed - 1) * 1);
         // padding-left: (($line-height-computed - 1) * 0.25);

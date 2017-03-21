@@ -164,6 +164,11 @@ body {
 
 .content {
 	line-height: 2;
+
+}
+
+.content a {
+	color: $link-color-content;
 }
 
 blockquote {
