@@ -26,6 +26,8 @@ p:hover {}
 
 # Common Pseudo-Classes
 
+NOTE: Any pseudo-class that relies upon mouse information (such as the ones below) will not translate to mobile devices. 
+
 ### `:hover`
 
 The `:hover` class is triggered whenever a users mouse "hovers over" the selected element.

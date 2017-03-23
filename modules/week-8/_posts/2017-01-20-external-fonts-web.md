@@ -126,3 +126,10 @@ NOTE: We are using the "HTML link" method from Google fonts for embedding the fo
 Follow these links to download, view on GitHub, or view the page;
 
 | [**[Code Download]**](https://github.com/Montana-Media-Arts/341-work/raw/master/lectureCode/08/embed-gfonts/embed-gfonts.zip) | [**[View on GitHub]**](https://github.com/Montana-Media-Arts/341-work/raw/master/lectureCode/08/embed-gfonts/) | [**[Live Example]**](https://montana-media-arts.github.io/341-work/lectureCode/08/embed-gfonts/) |
+
+
+## { TODO: }
+
+Please read;
+
+- ["Avoiding Faux Weights And Styles With Google Web Fonts", by Laura Franz]( https://www.smashingmagazine.com/2012/07/avoiding-faux-weights-styles-google-web-fonts/)

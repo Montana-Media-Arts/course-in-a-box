@@ -5,7 +5,7 @@ module: 8
 
 # Introduction to Fonts
 
-As you likely know, the font you choose to display content with, regardless of whether this is for the web, a book, or advertisement, can have great effects on the reception of that content.
+As you know by now, the font you choose to display content with, regardless of whether this is for the web, a book, or advertisement, can have great effects on the reception of that content.
 
 Sometimes a font is chosen simply in order to be clear, and sometimes it is part of an entire branding strategy. Regardless the reason, it is important to understand how fonts are selected and applied for websites, as well as how the clients computer actually displays them.
 
