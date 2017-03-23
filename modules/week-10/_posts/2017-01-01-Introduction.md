@@ -1,0 +1,15 @@
+---
+title: Overview
+module: 10
+---
+
+# Week 10 Overview<br />Layout Design, Images, & Content Development
+
+This week we will continue looking;
+
+- Layout and layout design
+- Utilizing these techniques for images
+- Content development and integration
+
+
+This week will conclude with an introduction to "Responsive Web Design". Next week this will be the sole topic, at which point, you will be ready to start building your final sites.

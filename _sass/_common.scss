@@ -153,7 +153,8 @@ body {
 
 .due-date {
 	margin-bottom: 2em;
-	color: rgb(200, 10, 10);
+	// color: rgb(255, 68, 68);
+	color: $brand-compliment-2;
 	padding-right: $padding-large-horizontal;
 	// line-height: 2;
 }

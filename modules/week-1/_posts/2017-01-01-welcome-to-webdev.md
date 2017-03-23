@@ -3,7 +3,7 @@ title: Course Overview
 module: 1
 ---
 
-# Welcome to Web Development (MART 341)
+# Week 1 Overview <br /> Welcome to Web Development (MART 341)
 
 ## Overview of the Course
 This course is intended to make you comfortable with presenting yourself through the web. In addition, you will learn skills that should allow you to build, manage, and develop websites.
