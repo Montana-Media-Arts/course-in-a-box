@@ -173,3 +173,10 @@ Per the [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attach
     - This keyword means that the background is fixed with regard to the element's contents: if the element has a scrolling mechanism, the background scrolls with the element's contents, and the background painting area and background positioning area are relative to the scrollable area of the element rather than to the border framing them.
 - `scroll`
     - This keyword means that the background is fixed with regard to the element itself and does not scroll with its contents. (It is effectively attached to the element's border.) (This is the default value.)
+
+
+## { TODO: }
+
+Please read:
+
+- Chapter 16 from the Duckett for more on images.

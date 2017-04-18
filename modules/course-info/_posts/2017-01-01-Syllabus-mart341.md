@@ -108,23 +108,27 @@ The course will cover the 5 major topic areas.
 -   Following the course repository
 
 
-### 2: Hello World (HTML and CSS)
+### 2: HTML5
 
 -   HTML5
--   CSS3
 -   Viewing source code.
 -   Github Pages
 -   `index.html`
 -   Publishing your first live webpage
 -   Debugging
+
+### 3: CSS3
+
+-   CSS3
 -   Page Layout
 
 
-### 3: Responsive Web Design
+### 4: Responsive Web Design
 
 -   Responsive Web Design
 -   Mobile First Web Design
 
+<!--
 ### 4: Frameworks
 
 -   Bootstrap
@@ -135,7 +139,7 @@ The course will cover the 5 major topic areas.
 
 -   SASS
 -   Jekyll
-
+-->
 
 
 # Policies
