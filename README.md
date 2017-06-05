@@ -1,6 +1,6 @@
 # MART 341 - Web Development
 
-This repository is the web site for the University of Montana, School of Media Art's _Web Development_ (mart 341) course.
+This repository is the web site for the University of Montana, School of Media Art's _Web Development_ (mart341) course.
 
 ### Designed by
 - Professor Michael Musick
