@@ -1,9 +1,10 @@
 ---
 ---
 
-@import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
+// @import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
 
-@import "p2pu-css-framework/p2pustrap";
+@import "bootstrap/bootstrap";
+@import "variables";
 
 {% if site.jumbotron_color %}
 	$jumbotron-color: {{ site.jumbotron_color }};
@@ -20,7 +21,7 @@
 @import "common";
 @import "nav";
 @import "landing";
-@import "calendar";
+// @import "calendar";
 @import "syntax-highlight";
 @import "displayCodeExample";
 
