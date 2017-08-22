@@ -1,15 +1,38 @@
 ---
 layout: base
 ---
+
 {% assign module=page.categories[1] %}
-<div class="clearfix page-container">
-	{% include side_toolbar.html %}
+
+<div class="container-fluid">
+
+      <div class="row justify-content-md-center">
+
+        <div class="col-sm-12 col-md-9 content">
+
+			{{ content }}
+
+
+		</div> <!--End Content-Main -->
+	</div> <!--End row -->
+</div> <!--End container -->
+
+
+
+
+<!-- <div class="clearfix page-container"> -->
+
+	<!-- {% include side_toolbar.html %} -->
+
 	<!-- <div class="col-md-10 col-md-offset-2 background-white main-section"> -->
-	<div class="col-md-10 background-white main-section">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="row">
-				<div class="content col-lg-12">
-					{{ content }}
+	<!-- <div class="col-md-10 background-white main-section"> -->
+		<!-- <div class="col-md-8 col-md-offset-2"> -->
+			<!-- <div class="row"> -->
+				<!-- <div class="content col-lg-12"> -->
+
+
+
+
 					{% include next_in_module.html %}
 					{% if prev or next %}
 						<hr class="final-horizontal-ruler" />
@@ -32,8 +55,8 @@ layout: base
 							</a>
 						</div>
 					{% endif %}
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+				<!-- </div> -->
+			<!-- </div> -->
+		<!-- </div> -->
+	<!-- </div> -->
+<!-- </div> -->
