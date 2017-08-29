@@ -4,7 +4,33 @@ layout: base
 
 {% assign module=page.categories[1] %}
 
-<div class="container-fluid">
+{% if page.module %}
+<div class="container-fluid bg-compliment-1 p-3">
+    <div class="pagination-section title due-date d-flex justify-content-center" >
+        <div class="active-week px-3">
+            WEEK: {{ page.module }}
+        </div>
+
+        <div class="active-due-date px-3">
+            Active: {{ site.data.dates[page.module][0] }}
+        </div>
+        <div class="active-due-date px-3">
+            Work Due: {{ site.data.dates[page.module][1] }}
+        </div>
+
+
+    </div>
+</div>
+{% endif %}
+
+<hr class="bg-primary m-0 pb-1">
+
+
+<div class="container-fluid modNav-top px-0">
+    {% include module_nav.html %}
+</div>
+
+<div class="container-fluid px-md-0">
 
       <div class="row justify-content-md-center">
 
@@ -19,44 +45,45 @@ layout: base
 
 
 
+<div class="container-fluid">
 
-<!-- <div class="clearfix page-container"> -->
+      <div class="row justify-content-md-center">
 
-	<!-- {% include side_toolbar.html %} -->
+		  <div class="col-sm-12 col-md-6">
 
-	<!-- <div class="col-md-10 col-md-offset-2 background-white main-section"> -->
-	<!-- <div class="col-md-10 background-white main-section"> -->
-		<!-- <div class="col-md-8 col-md-offset-2"> -->
-			<!-- <div class="row"> -->
-				<!-- <div class="content col-lg-12"> -->
+			  {% include next_in_module.html %}
+			  {% if prev or next %}
+			  <hr class="final-horizontal-ruler" />
+			  {% endif %}
 
+			  <div class="row">
 
+				  <div class="col-sm-12 col-md-6">
+					  {% if prev %}
+				  	  <div class="section-nav-title">
+						  Previous section:
+					  </div>
+					  <a rel="prev" class="prev" href="{{ site.baseurl }}{{ prev.url }}">
+						  {{ prev.title }} </a>
+					  {% endif %}
+				  </div>
 
+				  <div class="col-sm-12 col-md-6 text-md-right">
+					  {% if next %}
+						  <div class="section-nav-title">
+							  Next section:
+						  </div>
+						  <a rel="next" class="next" href="{{ site.baseurl }}{{ next.url }}"> {{ next.title }}
+						  </a>
 
-					{% include next_in_module.html %}
-					{% if prev or next %}
-						<hr class="final-horizontal-ruler" />
-					{% endif %}
-					{% if prev %}
-						<div class="pagination-section pull-left">
-							<div class="title">
-								Previous section:
-							</div>
-							<a rel="prev" class="prev" href="{{ site.baseurl }}{{ prev.url }}">
-								{{ prev.title }} </a>
-						</div>
-					{% endif %}
-					{% if next %}
-						<div class="pagination-section pull-right">
-							<div class="title">
-								Next section:
-							</div>
-							<a rel="next" class="next" href="{{ site.baseurl }}{{ next.url }}"> {{ next.title }}
-							</a>
-						</div>
-					{% endif %}
-				<!-- </div> -->
-			<!-- </div> -->
-		<!-- </div> -->
-	<!-- </div> -->
-<!-- </div> -->
+					  {% endif %}
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+	</div>
+</div>
+
+<div class="container-fluid modNav-bottom px-0">
+    {% include module_nav.html %}
+</div>
