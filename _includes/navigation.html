@@ -7,23 +7,23 @@
     <a class="navbar-brand" href="{{ site.baseurl }}">
         <div class="navbar-brand">
             <div class="">
-                Creative Coding 1
+                {{ site.data.course.title-short }}
             </div>
             <div class="">
-                Montana | mart120
+                {{ site.data.course.institution-short }}
             </div>
         </div>
     </a>
 
 
-    <div class="collapse navbar-collapse px-4" id="navbarCollapse">
+    <div class="collapse navbar-collapse pl-4 pr-3" id="navbarCollapse">
         <div class="navbar-nav">
 
 
             {% for module in site.data.course.infoModules %}
                 {% assign first_post = site.categories[module]|reverse|first %}
 
-                <a class="nav-item nav-link px-4 pb-0 mb-0 {% if page.categories[1] == module %}active{% endif %}" href="{{ site.baseurl }}{{ first_post.url }}">
+                <a class="nav-item nav-link px-3 pb-0 mb-0 {% if page.categories[1] == module %}active{% endif %}" href="{{ site.baseurl }}{{ first_post.url }}">
                     {% capture splitword %}{% for word in module %}{{ word | replace: '-', ' ' }} {% endfor %}{% endcapture %}
                     {% capture titlecase %}{% for word in splitword %}{{ word | capitalize }} {% endfor %}{% endcapture %}
                     {{ titlecase }}
