@@ -24,11 +24,21 @@
 .modNav-top {
 
     .module-nav {
-        max-height: $spacer * 12;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-height: $spacer * 8;
+        max-height: $spacer * 8;
     }
 
     .module-nav-item {
         text-align: center;
+
+        // box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .5);
+        // display: flex;
+        // justify-content: center;
+        // flex-direction: column;
+        // text-align: center;
     }
 
 }
