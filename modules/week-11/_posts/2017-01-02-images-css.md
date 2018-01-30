@@ -28,7 +28,7 @@ img {
 }
 ```
 
-In some situations, this will cause the height of the image to get skewed. In which case, you should set the height of the image to the a percentage. This percentage should be the ratio of width:height. So if you image is 4:3, you would set the height to `75%`;
+In some situations, this will cause the height of the image to get skewed. In which case, you should set the height of the image to a percentage. This percentage should be the ratio of width:height. So if you image is 4:3, you would set the height to `75%`;
 
 <div id="code-heading">CSS</div>
 
