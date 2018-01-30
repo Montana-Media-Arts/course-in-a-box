@@ -16,6 +16,8 @@ The [**syllabus**]({{site.baseurl}}/modules/course-info/Syllabus-mart341/) conta
 <br />
 <br />
 
+<!--
+
 # Instructor Introduction Videos
 
 ## Nick Moles | Section 50
@@ -26,6 +28,9 @@ The [**syllabus**]({{site.baseurl}}/modules/course-info/Syllabus-mart341/) conta
 <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://player.vimeo.com/video/203341647" frameborder="0" allowfullscreen></iframe></div>
 
 <br />
+
+-->
+
 
 # Additional Information
 
